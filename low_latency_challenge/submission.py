@@ -33,4 +33,4 @@ for line in stdin:
     if line == '': 
         break
     d=[float(x) for x in line.split(',')]
-    print(round(classifier.predict([d])[0]))
+    print(round(lgbm_model.predict([d])[0]))
